@@ -72,7 +72,7 @@ body.dark-mode {
     color: var(--cor3);
     font-size: 1.7rem;
     font-weight: 600;
-    padding-right: 20px
+    margin-left: 15px;
 }
 .navigation ul {
     display: flex;
@@ -92,6 +92,7 @@ body.dark-mode {
 .navigation i {
     cursor: pointer;
     font-size: 1.5rem;
+    
 }
 .menu {
     cursor: pointer;
