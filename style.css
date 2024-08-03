@@ -215,11 +215,11 @@ body.dark-mode .navigation .logo {
         padding: 100px 2%;
         flex-direction: column;
         text-align: center;
-        overflow: hidden;
-        gap: 2rem;
+        overflow: auto;
+        gap: 3rem;
     }
     .home .text-h4 {
-        font-size: 15px;
+        font-size: 18px;
     }
     .home .text-h1 {
         font-size: 2.5rem;
