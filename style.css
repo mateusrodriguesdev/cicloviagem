@@ -216,7 +216,7 @@ body.dark-mode .navigation .logo {
         flex-direction: column;
         text-align: center;
         overflow: hidden;
-        gap: 5rem;
+        gap: 2rem;
     }
     .home .text-h4 {
         font-size: 15px;
