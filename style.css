@@ -69,10 +69,18 @@ body.dark-mode {
     position: fixed;
 }
 .navigation .logo {
-    color: var(--cor3);
-    font-size: 1.7rem;
-    font-weight: 600;
-    margin-left: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left:20px;
+    color: #0B0E12;
+    transition: 0.35s;
+}
+.navigation .logo:hover {
+    color: var(--cor4);
+}
+
+body.dark-mode .navigation .logo {
+    color: white;
 }
 .navigation ul {
     display: flex;
