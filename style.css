@@ -76,7 +76,7 @@ body.dark-mode {
     transition: 0.35s;
 }
 .navigation .logo:hover {
-    color: var(--cor4);
+    color: var(--cor5);
 }
 
 body.dark-mode .navigation .logo {
@@ -93,9 +93,27 @@ body.dark-mode .navigation .logo {
     font-size: 17px;
     font-weight: 500;
     transition: all 0.35s;
+    position: relative;
 }
 .navigation ul li a:hover {
-    color: var(--cor4)
+    color: var(--cor5);
+}
+.navigation ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 60%;
+    height: 1px;
+    background: var(--cor5);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+.navigation ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4s;
 }
 .navigation i {
     cursor: pointer;
