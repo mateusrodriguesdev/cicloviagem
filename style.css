@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root {
+    --cor1: #2F353C;
+    --cor2: white;
+    --cor3: #0B0E12;
+    --cor4: #647891;
+    --cor5: #6289BC;
+    --cor6: #5292E6;
+}
+
+.dark-mode {
+    --cor1: #FFFFFF;
+    --cor2: #0B0E12;
+    --cor3: #F3F4F6;
+    --cor4: #A3B1C6;
+    --cor5: #BFD7FF;
+    --cor6: #74A9F0;
+}
+
+.loading-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--cor3);
+    z-index: 9999;
+}
+
+.hidden {
+    display: none;
+}
+
+.loading-text {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    color: var(--cor3);
+    background: var(--cor2);
+}
+body.dark-mode {
+    background: var(--cor2);
+    color: var(--cor3);
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem var(--cor4);
+    width: 100%;
+    background: var(--cor2);
+    transition: all 0.5s;
+    position: fixed;
+}
+.navigation .logo {
+    color: var(--cor3);
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding-right: 20px
+}
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navigation ul li a {
+    color: var(--cor3);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.35s;
+}
+.navigation ul li a:hover {
+    color: var(--cor4)
+}
+.navigation i {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.menu {
+    cursor: pointer;
+    display: none;
+}
+.menu .bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--cor3);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--cor4);
+}
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+.home-text {
+    max-width: 37rem;
+}
+.home-text .text-h4 {
+    font-size: 2rem;
+    color: var(--cor4);
+    margin-bottom: 1rem;   
+}
+.home-text .text-h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+.home-text p {
+    margin-bottom: 4rem;
+}
+.home-botao {
+    padding: 15px 45px;
+    background: var(--cor4);
+    color: var(--cor2);
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.home-botao:hover {
+    background-color: var(--cor5);
+}
+.home-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+@media (max-width: 785px) {
+    .navigation {
+        padding: 18px 20px;
+    }
+    .menu {
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2){
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--cor2);
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .nav-menu.ativo {
+        right: 0;
+
+    }
+    .nav-item {
+        margin: 16px 0px;
+    }
+    .home {
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 5rem;
+    }
+    .home .text-h4 {
+        font-size: 15px;
+    }
+    .home .text-h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .home p {
+        font-size: 15px;
+    }
+    .home-img {
+        width: 90%;
+    }
+}
