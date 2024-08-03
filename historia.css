@@ -1,0 +1,46 @@
+:root {
+    --cor1: #2F353C;
+    --cor2: white;
+    --cor3: #0B0E12;
+    --cor4: #647891;
+    --cor5: #6289BC;
+    --cor6: #5292E6;
+}
+
+.dark-mode {
+    --cor1: #FFFFFF;
+    --cor2: #0B0E12;
+    --cor3: #F3F4F6;
+    --cor4: #A3B1C6;
+    --cor5: #BFD7FF;
+    --cor6: #74A9F0;
+}
+.main-hist {
+    min-width: 320px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px;
+    box-shadow: 0px 0px 10px var(--cor4) ;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: justify;
+}
+article .h1-hist {
+    padding-top: 2em;
+    text-align: center;
+    color: var(--cor3);
+    font-weight: 600;
+    font-size: 2em;
+}
+article .h2-hist {
+    padding-top: 1.5em;
+    text-align: left;
+    color: var(--cor3);
+    font-weight: 550;
+}
+article .p-hist {
+    padding-top: 1.5em;
+    text-indent: 30px;
+}
+
