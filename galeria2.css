@@ -1,0 +1,42 @@
+:root {
+    --cor1: #2F353C;
+    --cor2: white;
+    --cor3: #0B0E12;
+    --cor4: #647891;
+    --cor5: #6289BC;
+    --cor6: #5292E6;
+}
+
+.dark-mode {
+    --cor1: #FFFFFF;
+    --cor2: #0B0E12;
+    --cor3: #F3F4F6;
+    --cor4: #A3B1C6;
+    --cor5: #BFD7FF;
+    --cor6: #74A9F0;
+}
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 2vw;
+    padding-top:5em;
+}
+.gallery-items{
+    width: 340px;
+    height: 340px;
+    border: 10px solid #FFF;
+    box-shadow: 5px 5px 5px #0006;
+    flex-grow: 1;
+    transition: transform .5s linear;
+}
+.gallery-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-items:hover{
+    transform: scale(1.3);
+}
