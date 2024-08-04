@@ -118,11 +118,6 @@ body.dark-mode .navigation .logo {
     transform-origin: left;
     transition: transform 0.4s;
 }
-.navigation i {
-    cursor: pointer;
-    font-size: 1.5rem;
-    
-}
 .menu {
     cursor: pointer;
     display: none;
